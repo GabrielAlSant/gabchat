@@ -1,27 +1,84 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.header {
+  background-color: black;
+  color: white;
+  margin: -10px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.header h1{
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: 800px;
+  font-size: 30px;
+ 
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.log button{
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bolder;
+  margin-top:30px;
+  transition: 300ms;
+
+}
+
+.log button:hover{
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bolder;
+  margin-top:30px;
+  color: white;
+  background-color: black;
+  transition: 300ms;
+
+}
+
+
+
+
+.divchat {
+  margin-top: 20px;
+  border: 5px solid black;
+  display: block;
+  margin: auto;
+  width: 400px;
+  border-radius: 20px;
+  height: 200px;
+}
+
+.divchat {
+  text-align: center;
+}
+
+
+.divchat button{
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bolder;
+  margin-top:20px;
+  width: 300px;
+  text-align: center;
+  transition: 300ms;
+}
+
+.divchat button:hover{
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bolder;
+  margin-top:20px;
+  width: 300px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  transition: 300ms;
 }
